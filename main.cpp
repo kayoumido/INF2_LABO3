@@ -12,7 +12,22 @@ Compilateur : g++ 8.2.1
 
 #include <iostream>
 
+using namespace std;
+
+enum Colour {
+    Blue,
+    Red,
+    Yellow,
+    Black,
+    White,
+    Green,
+    Purpule,
+    Orange,
+    Gray,
+    Cyan
+};
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    
     return 0;
 }
