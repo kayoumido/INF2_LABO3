@@ -11,3 +11,11 @@ Compilateur : g++ 8.2.1
  */
 
 #include "Date.h"
+
+bool Date::operator<(const Date &DATE) {
+    if (this->year < DATE.year) return true;
+
+    if (this->year == DATE.year and this->month < DATE.month) return true;
+
+    return this->year == DATE.year and this->month == DATE.month and this->day < DATE.day;
+}
