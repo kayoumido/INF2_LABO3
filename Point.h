@@ -16,7 +16,15 @@ Compilateur : g++ 8.2.1
 
 
 class Point {
+public:
 
+    Point(int x, int y) : x(x), y(y) {};
+
+    bool operator < (const Point &POINT);
+
+private:
+    int x;
+    int y;
 };
 
 

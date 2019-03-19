@@ -12,3 +12,7 @@ Compilateur : g++ 8.2.1
 
 
 #include "Point.h"
+
+bool Point::operator<(const Point &POINT) {
+    return this->x < POINT.x and this->y < POINT.y;
+}
