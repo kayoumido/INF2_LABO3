@@ -14,8 +14,10 @@ Compilateur : g++ 8.2.1
 #ifndef LABO3_DATE_H
 #define LABO3_DATE_H
 
+#include <iostream>
 
 class Date {
+    friend std::ostream &operator<<(std::ostream &os, const Date &DATE);
 public:
     Date(unsigned day, unsigned month, unsigned year) : day(day), month(month), year(year) {};
 

@@ -19,3 +19,10 @@ bool Date::operator<(const Date &DATE) {
 
     return this->year == DATE.year and this->month == DATE.month and this->day < DATE.day;
 }
+
+std::ostream &operator<<(std::ostream &os, const Date &DATE) {
+
+    os << DATE.day << "." << DATE.month << "." << DATE.year;
+
+    return os;
+}
