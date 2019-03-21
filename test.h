@@ -28,11 +28,15 @@ void display(std::vector<T> &toDisplay) {
 template <typename T>
 void test(std::vector<T> &toTest) {
 
+    std::cout << "Before sort :";
     display(toTest);
 
     sort(toTest);
 
+    std::cout << "After sort : ";
     display(toTest);
+
+    std::cout << std::endl;
 }
 
 #endif
