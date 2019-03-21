@@ -14,4 +14,25 @@ Compilateur : g++ 8.2.1
 #ifndef LABO3_SORT_H
 #define LABO3_SORT_H
 
+#include <vector>
+
+template <typename T>
+void sort(std::vector<T> &toSort) {
+
+    for (size_t i = 0; i < toSort.size(); ++i) {
+
+        size_t imin = i;
+
+        for (size_t j = i + 1; j < toSort.size(); ++j) {
+
+            if (toSort.at(j) < toSort.at(imin)) {
+                imin = j;
+            }
+        }
+
+        std::swap(toSort.at(i), toSort.at(imin));
+    }
+
+}
+
 #endif
