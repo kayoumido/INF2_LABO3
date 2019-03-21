@@ -14,8 +14,10 @@ Compilateur : g++ 8.2.1
 #ifndef LABO3_POINT_H
 #define LABO3_POINT_H
 
+#include <iostream>
 
 class Point {
+    friend std::ostream &operator<<(std::ostream &os, const Point &POINT);
 public:
 
     Point(int x, int y) : x(x), y(y) {};
