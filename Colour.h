@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-enum Colour {
+enum class Colour {
     Blue,
     Red,
     Yellow,
