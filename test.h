@@ -8,6 +8,8 @@
 #include <vector>
 #include <iostream>
 
+#include "sort.h"
+
 template <typename T>
 void display(std::vector<T> &toDisplay) {
 
@@ -19,8 +21,18 @@ void display(std::vector<T> &toDisplay) {
         std::cout << toDisplay.at(i);
     }
 
-    std::cout << "]";
+    std::cout << "]" << std::endl;
 }
 
+
+template <typename T>
+void test(std::vector<T> &toTest) {
+
+    display(toTest);
+
+    sort(toTest);
+
+    display(toTest);
+}
 
 #endif
