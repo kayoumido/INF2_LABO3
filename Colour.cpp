@@ -1,7 +1,17 @@
-//
-// Created by deekay on 21/03/19.
-//
+/*
+-----------------------------------------------------------------------------------
+Laboratoire : 03
+Fichier     : Colour.cpp
+Auteur(s)   : Doran Kayoumi, Alexandre Simik
+Date        : 21.03.2019
 
+But         : Voir main.cpp
+
+Remarque(s) : -
+
+Compilateur : MinGW-g++ 6.3.0
+-----------------------------------------------------------------------------------
+*/
 #include "Colour.h"
 
 using namespace std;

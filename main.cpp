@@ -3,17 +3,19 @@
 Laboratoire : 03
 Fichier     : main.cpp
 Auteur(s)   : Doran Kayoumi, Alexandre Simik
-Date        : 19.03.2019
-But         :
+Date        : 21.03.2019
+
+But         : Mettre en place une fonction générique de tri sur un vecteur.
+
 Remarque(s) : -
-Compilateur : g++ 8.2.1
+
+Compilateur : MinGW-g++ 6.3.0
 -----------------------------------------------------------------------------------
- */
+*/
 
 #include <iostream>
 #include <vector>
 #include <string>
-
 #include "test.h"
 #include "Date.h"
 #include "Point.h"

@@ -1,18 +1,19 @@
 /*
 -----------------------------------------------------------------------------------
 Laboratoire : 03
-Fichier     : Point.cpp
+Fichier     : point.cpp
 Auteur(s)   : Doran Kayoumi, Alexandre Simik
-Date        : 19.03.2019
-But         :
+Date        : 21.03.2019
+
+But         : Voir main.cpp
+
 Remarque(s) : -
-Compilateur : g++ 8.2.1
+
+Compilateur : MinGW-g++ 6.3.0
 -----------------------------------------------------------------------------------
- */
+*/
 
 #include <cmath>
-
-
 #include "Point.h"
 
 Point::Point(int x, int y) : x(x), y(y) {}

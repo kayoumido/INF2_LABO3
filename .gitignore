@@ -34,7 +34,7 @@
 *.pdf
 
 #Visual Studio Code
-.vscode/ipch/
+.vscode/
 
 # CLion
 cmake-build-debug/

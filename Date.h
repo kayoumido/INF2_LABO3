@@ -3,12 +3,15 @@
 Laboratoire : 03
 Fichier     : Date.h
 Auteur(s)   : Doran Kayoumi, Alexandre Simik
-Date        : 19.03.2019
-But         :
+Date        : 21.03.2019
+
+But         : Voir main.cpp
+
 Remarque(s) : -
-Compilateur : g++ 8.2.1
+
+Compilateur : MinGW-g++ 6.3.0
 -----------------------------------------------------------------------------------
- */
+*/
 
 #ifndef LABO3_DATE_H
 #define LABO3_DATE_H

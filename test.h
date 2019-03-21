@@ -1,13 +1,23 @@
-//
-// Created by deekay on 21/03/19.
-//
+/*
+-----------------------------------------------------------------------------------
+Laboratoire : 03
+Fichier     : test.h
+Auteur(s)   : Doran Kayoumi, Alexandre Simik
+Date        : 21.03.2019
+
+But         : Voir main.cpp
+
+Remarque(s) : -
+
+Compilateur : MinGW-g++ 6.3.0
+-----------------------------------------------------------------------------------
+*/
 
 #ifndef LABO3_DISPLAY_H
 #define LABO3_DISPLAY_H
 
 #include <vector>
 #include <iostream>
-
 #include "sort.h"
 
 /**
