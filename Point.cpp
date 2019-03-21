@@ -1,7 +1,7 @@
 /*
 -----------------------------------------------------------------------------------
 Laboratoire : 03
-Fichier     : point.cpp
+Fichier     : Point.cpp
 Auteur(s)   : Doran Kayoumi, Alexandre Simik
 Date        : 21.03.2019
 
