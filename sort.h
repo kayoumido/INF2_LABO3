@@ -17,6 +17,13 @@ Compilateur : g++ 8.2.1
 #include <vector>
 
 template <typename T>
+void swap(T &lhs, T &rhs) {
+    T tmp = rhs;
+    rhs = lhs;
+    lhs = tmp;
+}
+
+template <typename T>
 void sort(std::vector<T> &toSort) {
 
     for (size_t i = 0; i < toSort.size(); ++i) {
@@ -30,9 +37,10 @@ void sort(std::vector<T> &toSort) {
             }
         }
 
-        std::swap(toSort.at(i), toSort.at(imin));
+        swap(toSort.at(i), toSort.at(imin));
     }
 
 }
+
 
 #endif
