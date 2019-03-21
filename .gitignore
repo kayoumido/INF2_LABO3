@@ -32,3 +32,19 @@
 *.app
 
 *.pdf
+
+#Visual Studio Code
+.vscode/ipch/
+
+# CLion
+cmake-build-debug/
+.idea/
+
+# NetBeans
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
