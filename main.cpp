@@ -14,7 +14,6 @@ Compilateur : g++ 8.2.1
 #include <vector>
 #include <string>
 
-// #include "sort.h"
 #include "test.h"
 #include "Date.h"
 #include "Point.h"
@@ -31,7 +30,11 @@ int main() {
     vector<Point> vPoint = {{1, 2}, {3, 4}, {5, 5}, {-1, 7}, {3, 1}};
     vector<Date> vDate = {{1, 2, 1927}, {3, 4, 2002}, {5, 5, 2001}};
 
+    test(vInt);
+    test(vString);
     test(vCouleur);
+    test(vPoint);
+    test(vDate);
 
 
     return 0;
