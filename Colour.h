@@ -20,6 +20,13 @@ enum class Colour {
     Cyan
 };
 
+/**
+ * @brief Stream operator overload
+ * 
+ * @param os 
+ * @param COLOUR 
+ * @return std::ostream& 
+ */
 std::ostream &operator<<(std::ostream &os, const Colour &COLOUR);
 
 #endif

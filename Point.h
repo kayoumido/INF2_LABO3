@@ -10,24 +10,42 @@ Compilateur : g++ 8.2.1
 -----------------------------------------------------------------------------------
  */
 
-
 #ifndef LABO3_POINT_H
 #define LABO3_POINT_H
 
 #include <iostream>
 
 class Point {
-    friend std::ostream &operator<<(std::ostream &os, const Point &POINT);
-public:
+   /**
+    * @brief Stream operator overload
+    *
+    * @param os
+    * @param POINT
+    * @return std::ostream&
+    */
+   friend std::ostream &operator<<(std::ostream &os, const Point &POINT);
 
-    Point(int x, int y) : x(x), y(y) {};
+  public:
+   /**
+    * @brief Construct a new Point object
+    *
+    * @param x
+    * @param y
+    */
+   Point(int x, int y);
 
-    bool operator < (const Point &POINT);
+   /**
+    * @brief
+    *
+    * @param POINT
+    * @return true if this is smaller than POINT
+    * @return false otherwise
+    */
+   bool operator<(const Point &POINT);
 
-private:
-    int x;
-    int y;
+  private:
+   int x;
+   int y;
 };
-
 
 #endif

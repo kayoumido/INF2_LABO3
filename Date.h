@@ -10,48 +10,44 @@ Compilateur : g++ 8.2.1
 -----------------------------------------------------------------------------------
  */
 
-
 #ifndef LABO3_DATE_H
 #define LABO3_DATE_H
 
 #include <iostream>
 
 class Date {
-    friend std::ostream &operator<<(std::ostream &os, const Date &DATE);
-public:
-    Date(unsigned day, unsigned month, unsigned year) : day(day), month(month), year(year) {};
+   /**
+    * @brief Stream operator overload
+    *
+    * @param os
+    * @param DATE
+    * @return std::ostream&
+    */
+   friend std::ostream &operator<<(std::ostream &os, const Date &DATE);
 
-    unsigned int getDay() const {
-        return this->day;
-    }
+  public:
+   /**
+    * @brief Construct a new Date object
+    *
+    * @param day
+    * @param month
+    * @param year
+    */
+   Date(unsigned day, unsigned month, unsigned year);
 
-    void setDay(unsigned int day) {
-        this->day = day;
-    }
+   /**
+    * @brief Comparaison operator overload.
+    *
+    * @param DATE
+    * @return true if this is smaller than DATE
+    * @return false otherwise
+    */
+   bool operator<(const Date &DATE);
 
-    unsigned int getMonth() const {
-        return this->month;
-    }
-
-    void setMonth(unsigned int month) {
-        this->month = month;
-    }
-
-    unsigned int getYear() const {
-        return this->year;
-    }
-
-    void setYear(unsigned int year) {
-        this->year = year;
-    }
-
-    bool operator < (const Date &DATE);
-
-private:
-    unsigned day;
-    unsigned month;
-    unsigned year;
+  private:
+   unsigned day;
+   unsigned month;
+   unsigned year;
 };
-
 
 #endif

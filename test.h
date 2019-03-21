@@ -10,17 +10,19 @@
 
 #include "sort.h"
 
+/**
+ * @brief Generic display function for vector container.
+ * 
+ * @tparam T (generic type)
+ * @param toDisplay Vector to display
+ */
 template <typename T>
 void display(std::vector<T> &toDisplay) {
-
     std::cout << "[";
-
     for (size_t i = 0; i < toDisplay.size(); ++i) {
         if (i) std::cout << ", ";
-
         std::cout << toDisplay.at(i);
     }
-
     std::cout << "]" << std::endl;
 }
 

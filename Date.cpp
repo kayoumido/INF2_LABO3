@@ -12,6 +12,10 @@ Compilateur : g++ 8.2.1
 
 #include "Date.h"
 
+Date::Date(unsigned day, unsigned month, unsigned year)
+        : day(day), month(month), year(year){}
+
+
 bool Date::operator<(const Date &DATE) {
     if (this->year < DATE.year) return true;
 
