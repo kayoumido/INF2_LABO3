@@ -17,10 +17,10 @@ Compilateur : g++ 8.2.1
 
 bool Point::operator<(const Point &POINT) {
 
-    auto foo = sqrt(pow(this->x, 2) + pow(this->y, 2));
-    auto bar = sqrt(pow(POINT.x, 2) + pow(POINT.y, 2));
+    auto thisNorm   = sqrt(pow(this->x, 2) + pow(this->y, 2));
+    auto pointNorm  = sqrt(pow(POINT.x, 2) + pow(POINT.y, 2));
 
-    return foo < bar;
+    return thisNorm < pointNorm;
 }
 
 std::ostream &operator<<(std::ostream &os, const Point &POINT) {
